@@ -1,0 +1,53 @@
+#carousel {
+  width: 800px;
+  height: 600px;
+  margin: 50px 200px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #000;
+  position: relative;
+}
+
+#carousel img {
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+#carousel p {
+  z-index: 20;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.botoes button {
+  position: absolute;
+  font-size: 100px;
+  background: transparent;
+  border: 0;
+  z-index: 100;
+  top: 300px;
+}
+
+.prev {
+  display: inline-block;
+  position: absolute;
+  left: 90px;
+}
+
+.next {
+  display: inline-block;
+  position: absolute;
+  left: 1050px;
+}
+
+#carousel .active {
+  display: block;
+  z-index: 1;
+}
